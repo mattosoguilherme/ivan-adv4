@@ -1,14 +1,12 @@
 // Importa o módulo express para esse arquivo
 const express = require("express");
+require("dotenv").config();
 const nodemailer = require("nodemailer");
-
 
 // Instancia uma referência do express no projeto
 const app = express();
 const port = process.env.PORT || 3010; // Const para armanezar a porta do servidor
 app.set("view engine", "ejs");
-
-
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -27,38 +25,37 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/send", async (req, res)  => {
+app.post("/send", async (req, res) => {
+  const user = req.body;
 
-  const user = {
-    nome: "Guilherme Mattoso",
-    email: "guilhermemktfran@gmail.com",
-    assunto: "Teste",
-    mensagem: "Isso é um teste",
-  };
   const transporter = nodemailer.createTransport({
-    // host: process.env.MAIL_HOST,
+    secure:false,
     port: Number(process.env.PORT),
-    service: 'gmail',
-    secure: false,
+    service:'gmail',
+    tls: {
+      rejectUnauthorized: false,
+    },
     secureConnection: false,
     auth: {
-      user: process.env.USER,
-      pass:process.env.PASS,
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS,
     },
   });
 
-  console.log(process.env.USER);
-
-  const mail = await transporter.sendMail({
-    from: user.email,
-    to: "ivanpintoadvocacia@gmail.com",
-    subject: user.assunto,
-    text: user.mensagem,
-  }).catch(e => console.log(e))
-
-  res.send(mail)
-  console.log(mail);
-  
+  await transporter
+    .sendMail({
+      from: `${user.name} <${user.email}> `,
+      to: "ivanpintoadvocacia@hotmail.com",
+      subject: user.subject,
+      text: user.message,
+    })
+    .then((r) => {
+      res.redirect("/");
+      console.log(r);
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 });
 
 app.listen(port, () =>
