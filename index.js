@@ -47,7 +47,11 @@ app.post("/send", async (req, res) => {
       from: `${user.name} <${user.email}> `,
       to: "ivanpintoadvocacia@hotmail.com",
       subject: user.subject,
-      text: user.message,
+      text: `
+      Cliente: ${user.name}
+      Contato: ${user.email}
+      Mensagem: ${user.message}
+      `,
     })
     .then((r) => {
       res.redirect("/");
