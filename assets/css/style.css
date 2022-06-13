@@ -6,6 +6,11 @@
  
 }
 
+#nome{
+  color: #daa520;
+}
+
+
 .s-title {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -16,8 +21,8 @@
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color:#b8a07e;
-  box-shadow: 0 0 0 10px #b8a07e77;
+  background-color:#daa520;
+  box-shadow: 0 0 0 10px #a07b1d72;
 }
 
 .ico-circle {
@@ -66,7 +71,7 @@
   
 }
 .formulario form{
-  background-color: #b8a07e88 ;
+  background-color: #daa520 ;
   padding: 2rem;
   border-radius: 20px;
 }
@@ -75,7 +80,7 @@
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: #b8a07e88;
+  background: #daa520;
   margin: 0 0 1rem 0;
   border-radius: 10px;
 }
@@ -191,6 +196,7 @@
   align-self: center;
   margin-top: 40rem;
   animation: mover 1s infinite alternate;
+  color: #daa520;
 }
 
 @keyframes mover {
@@ -369,11 +375,11 @@ p {
 }
 
 .hvr-shutter-in-horizontal::before {
-  background: #333;
+  background: #daa520;
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #daa520;
 }
 
 .mb-30 {
@@ -394,7 +400,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #b8a07e;
+  background: #daa520;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -406,7 +412,7 @@ p {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #c6b398;
+  background: #e3b134;
   color: #fff;
 }
 .back-to-top.active {
@@ -487,7 +493,7 @@ p {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #b8a07e;
+  color: #daa520;
 }
 .navbar .dropdown ul {
   display: block;
@@ -514,7 +520,7 @@ p {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #b8a07e;
+  color: #daa520;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -599,7 +605,7 @@ p {
   color: #4b4a4a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #b8a07e;
+  color: #daa520;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -747,7 +753,7 @@ p {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #daa520;
 }
 
 #about .div-img-bg .about-img img {
@@ -785,7 +791,7 @@ p {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: #daa520;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -800,7 +806,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #daa520;
   line-height: 44px;
 }
 
@@ -813,10 +819,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #daa520;
 }
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #daa520;
 }
 
 /*--------------------------------------------------------------
@@ -1691,4 +1697,9 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+
+#redesSociais:hover i{
+  color: #fff !important;
 }
