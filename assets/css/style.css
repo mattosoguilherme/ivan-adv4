@@ -21,18 +21,10 @@
 
 @media (max-width:420px) {
   #slide .card-slide{
-    width: 90vw !important;
-    margin: 0px !important;
-    display: flex;
-    justify-content: space-between;
+    width: 400px !important;
+    margin: 0;
    }
 
-   .swiper-slide{
-    height: 131% !important;
-   }
-   .swiper-pagination-horizontal{
-    bottom: -33% !important;
-   }
 
 }
 
@@ -45,13 +37,12 @@
 
 #slide{
   padding: 0 !important;
-  padding-bottom: 30px !important;
 }
 .slider{
   padding: 1rem;
   margin:0;
   display: flex;
-  height: 45rem;
+  height: 35rem;
 
 }
 
@@ -67,8 +58,7 @@
 }
 
 #slide .card-slide img{
-  width: 80%;
-  height: 100%;
+  width: 100%;
 }
 
 
