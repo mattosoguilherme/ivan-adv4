@@ -1,7 +1,7 @@
 {
   "name": "ivan-adv4",
   "version": "1.0.0",
-  "description": "Desenvolvido por G&F ",
+  "description": "Thanks for downloading this template!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/FredyyLima/ivan-adv4.git"
   },
   "keywords": [],
-  "author": "G&F",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FredyyLima/ivan-adv4/issues"
