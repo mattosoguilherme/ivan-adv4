@@ -21,7 +21,7 @@
 
 @media (max-width:420px) {
   #slide .card-slide{
-    width: 90vw !important;
+    width: 300px !important;
     margin: 0px !important;
     display: flex;
     justify-content: space-between;
